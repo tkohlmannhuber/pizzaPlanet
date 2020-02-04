@@ -1,0 +1,69 @@
+.banner{
+    z-index: 100000;
+    background-color: $secondaryColor;
+    margin-top: 8rem;
+    height: 67rem;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    position: relative; 
+
+    .banner-headline{
+        color: $textColorDark;
+        text-align: center;
+        padding-top: 7.5rem;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: $underlineColor;
+
+    }
+
+    .banner-list{
+        position: absolute;
+        padding: 0;
+        left: 16rem;
+        opacity: 0;
+    }
+
+    .banner-list-item{
+        font-size: $fontSizeBannerList;
+        font-weight: 300;
+        line-height: 2;
+    }
+
+    .pizzamann{
+        position: absolute;
+        right: 37rem;
+        top: 16rem;
+        opacity: 0;
+    }
+
+    .banner-text__order{
+        position: absolute;
+        font-size: 11.5rem;
+        left: 8rem;
+        top: 26rem;
+        margin: 0;
+    }
+
+    .banner-button{
+        position: absolute;
+        top: 45rem;
+        left: 44rem;
+    }
+
+    .pizzabox{
+        position: absolute;
+        right: 20rem;
+        top: 25rem;
+    }
+
+    .pizzaknife{
+        position: absolute;
+        top: 31rem;
+        right: 14rem;
+    }
+
+        
+}
+
+
+

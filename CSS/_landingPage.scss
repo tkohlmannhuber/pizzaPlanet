@@ -1,0 +1,89 @@
+.headline{
+    font-size: $fontSizeH1;
+    color: $headlineColor;
+}
+
+.main-headline{
+    text-shadow: rgba(244, 166, 74, 0.7) -14px 8px 0px;
+    text-align: center;
+}
+
+.headline-span{
+    display:block;
+    font-size: $fontSizeH1;
+    text-transform: uppercase;
+
+}
+
+.site-title{
+    width: 50rem;
+    margin: 20rem auto 7.5rem;
+    position: relative;
+}
+
+.sub-shadow{
+    font-family: "BPreplay";
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: rgb(255, 158, 22) -7px 5px 0px;
+    position: absolute;
+    width: 50rem;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+
+/*############# PIZZZZA CIRCLE##############*/ 
+.pizza-pos-main{
+    position: relative;
+}
+
+.pizza-anm{
+    z-index: 1;
+
+}
+
+
+
+.pizza-circle{
+    position: absolute;
+    top: 30rem;
+    left: -3.5rem;
+    width: 60rem;
+    z-index: -1;
+}
+
+.pizza-pizza{
+    position: absolute;
+    top: 33.6rem;
+    left: 0.9rem;
+    width: 51rem;
+    z-index: -1;
+}
+
+
+.pizza-circle2{
+    position: absolute;
+    top: 30rem;
+    right: -3.5rem;
+    width: 60rem;
+    z-index: -1;
+
+}
+
+.pizza-pizza2{
+    position: absolute;
+    top: 33.6rem;
+    right: 0.9rem;
+    width: 51rem;
+    z-index: -1;
+}
+
+
+
+
+
+
+

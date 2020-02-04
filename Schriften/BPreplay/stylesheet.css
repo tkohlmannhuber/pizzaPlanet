@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'BPreplay';
+    src: url('BPreplay-Bold.woff2') format('woff2'),
+        url('BPreplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BPreplay';
+    src: url('BPreplay.woff2') format('woff2'),
+        url('BPreplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

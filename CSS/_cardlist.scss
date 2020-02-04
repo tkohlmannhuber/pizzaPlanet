@@ -1,0 +1,30 @@
+.pizza-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+    gap: 16rem;
+    margin-top: 16rem;
+
+    .pizza-list__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-list-head{
+        color: $textColorLight;
+        text-shadow: rgb(255, 158, 22) -5px 4px 0px;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+    }
+
+    .ingredients{
+        color: $textColorLight;
+        font-size: $fontSizePizzaList;
+        text-align: center;
+    }
+
+    .pizza-price{
+        font-size: $fontSizePrice;
+        color: $textColorLight;
+    }
+}

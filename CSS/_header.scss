@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li a{
+            font-size: 5rem;
+            margin-right: 3.8rem;
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+    }
+
+
+}

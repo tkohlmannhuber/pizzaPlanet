@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Gaegu';
+    src: url('Gaegu-Regular.woff2') format('woff2'),
+        url('Gaegu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gaegu';
+    src: url('Gaegu-Light.woff2') format('woff2'),
+        url('Gaegu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

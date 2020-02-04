@@ -1,0 +1,16 @@
+footer{
+    background: $secondaryColor;
+    height: 67rem;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: 10rem;
+
+    form{
+        padding-top: 25rem;
+        text-align: center;
+    }
+
+    .form-pizza{
+        width: 5rem;
+    }
+
+}

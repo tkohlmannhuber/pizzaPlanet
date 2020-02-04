@@ -1,0 +1,69 @@
+
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $backColor;
+    background-image: url(../Bilder/Background-space-mobile.svg);
+    
+    a:link,
+    a:visited{
+        color: $textColorLight;
+        text-decoration: none;
+    }
+
+    ul,ol{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    p{
+        font-size: $fontSizeP;
+        font-family: 'Gaegu';
+        font-weight: 300;
+    }
+
+    .wrapper{
+        padding: 0 $wrapperPaddingPC;
+    }
+
+    .wrapper-pizza-list{
+        padding: 0 $wrapperPizzaList;
+    }
+
+    .handwritten{
+        font-family: 'Gaegu';
+        font-weight: normal;
+    }
+
+    h1{
+        font-size: $fontSizeH1;
+        font-family: 'BPreplay';
+        color: $headlineColor;
+        text-transform: uppercase;
+    }
+
+    h2{
+        font-size: $fontSizeH2;
+        font-family: 'BPreplay';
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    h3{
+        font-size: $fontSizeH3;
+        font-family: 'BPreplay';
+        font-weight: bold;
+    }
+}
+
+
+

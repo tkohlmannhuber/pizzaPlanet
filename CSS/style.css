@@ -1,0 +1,350 @@
+@font-face {
+  font-family: 'Gaegu';
+  src: url("../Schriften/Gaegu/Gaegu-Regular.woff2") format("woff2"), url("../Schriften/Gaegu/Gaegu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gaegu';
+  src: url("../Schriften/Gaegu/Gaegu-Light.woff2") format("woff2"), url("../Schriften/Gaegu/Gaegu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BPreplay';
+  src: url("../Schriften/BPreplay/BPreplay-Bold.woff2") format("woff2"), url("../Schriften/BPreplay/BPreplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BPreplay';
+  src: url("../Schriften/BPreplay/BPreplay.woff2") format("woff2"), url("../Schriften/BPreplay/BPreplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*###### COLOR VARIABLES ##########*/
+/*######### FONT SIZE VARIABLES ######## */
+/*######### PADDING & MARGIN VARIABLES ########*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  font-size: 5rem;
+  margin-right: 3.8rem;
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3D3D3D;
+  background-image: url(../Bilder/Background-space-mobile.svg);
+}
+
+body a:link,
+body a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+body ul, body ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body p {
+  font-size: 2.2rem;
+  font-family: 'Gaegu';
+  font-weight: 300;
+}
+
+body .wrapper {
+  padding: 0 8rem;
+}
+
+body .wrapper-pizza-list {
+  padding: 0 16rem;
+}
+
+body .handwritten {
+  font-family: 'Gaegu';
+  font-weight: normal;
+}
+
+body h1 {
+  font-size: 12rem;
+  font-family: 'BPreplay';
+  color: white;
+  text-transform: uppercase;
+}
+
+body h2 {
+  font-size: 5rem;
+  font-family: 'BPreplay';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+body h3 {
+  font-size: 3.5rem;
+  font-family: 'BPreplay';
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 12rem;
+  color: white;
+}
+
+.main-headline {
+  text-shadow: rgba(244, 166, 74, 0.7) -14px 8px 0px;
+  text-align: center;
+}
+
+.headline-span {
+  display: block;
+  font-size: 12rem;
+  text-transform: uppercase;
+}
+
+.site-title {
+  width: 50rem;
+  margin: 20rem auto 7.5rem;
+  position: relative;
+}
+
+.sub-shadow {
+  font-family: "BPreplay";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: #ff9e16 -7px 5px 0px;
+  position: absolute;
+  width: 50rem;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+/*############# PIZZZZA CIRCLE##############*/
+.pizza-pos-main {
+  position: relative;
+}
+
+.pizza-anm {
+  z-index: 1;
+}
+
+.pizza-circle {
+  position: absolute;
+  top: 30rem;
+  left: -3.5rem;
+  width: 60rem;
+  z-index: -1;
+}
+
+.pizza-pizza {
+  position: absolute;
+  top: 33.6rem;
+  left: 0.9rem;
+  width: 51rem;
+  z-index: -1;
+}
+
+.pizza-circle2 {
+  position: absolute;
+  top: 30rem;
+  right: -3.5rem;
+  width: 60rem;
+  z-index: -1;
+}
+
+.pizza-pizza2 {
+  position: absolute;
+  top: 33.6rem;
+  right: 0.9rem;
+  width: 51rem;
+  z-index: -1;
+}
+
+.button {
+  border: 1px dashed black;
+  background: #FDA016;
+  border-radius: 1rem;
+  width: 20rem;
+  font-size: 2.8rem;
+  color: #3d3d3d;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 30px 10px #fda016;
+          box-shadow: 0px 0px 30px 10px #fda016;
+  padding: 1rem 0;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-family: 'BPreplay';
+  font-weight: normal;
+}
+
+.button:hover {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 30px 10px white;
+          box-shadow: 0px 0px 30px 10px white;
+  color: #FDA016;
+}
+
+.banner {
+  z-index: 100000;
+  background-color: #F6F3EE;
+  margin-top: 8rem;
+  height: 67rem;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+}
+
+.banner .banner-headline {
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 7.5rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #FDA016;
+          text-decoration-color: #FDA016;
+}
+
+.banner .banner-list {
+  position: absolute;
+  padding: 0;
+  left: 16rem;
+  opacity: 0;
+}
+
+.banner .banner-list-item {
+  font-size: 4.6rem;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.banner .pizzamann {
+  position: absolute;
+  right: 37rem;
+  top: 16rem;
+  opacity: 0;
+}
+
+.banner .banner-text__order {
+  position: absolute;
+  font-size: 11.5rem;
+  left: 8rem;
+  top: 26rem;
+  margin: 0;
+}
+
+.banner .banner-button {
+  position: absolute;
+  top: 45rem;
+  left: 44rem;
+}
+
+.banner .pizzabox {
+  position: absolute;
+  right: 20rem;
+  top: 25rem;
+}
+
+.banner .pizzaknife {
+  position: absolute;
+  top: 31rem;
+  right: 14rem;
+}
+
+.pizza-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(26rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  gap: 16rem;
+  margin-top: 16rem;
+}
+
+.pizza-list .pizza-list__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pizza-list .pizza-list-head {
+  color: white;
+  text-shadow: #ff9e16 -5px 4px 0px;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+}
+
+.pizza-list .ingredients {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.pizza-list .pizza-price {
+  font-size: 4rem;
+  color: white;
+}
+
+footer {
+  background: #F6F3EE;
+  height: 67rem;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: 10rem;
+}
+
+footer form {
+  padding-top: 25rem;
+  text-align: center;
+}
+
+footer .form-pizza {
+  width: 5rem;
+}
+/*# sourceMappingURL=style.css.map */
