@@ -56,6 +56,10 @@ header ul li:last-child {
   margin-right: 0;
 }
 
+header ul li a:hover {
+  color: #D54835;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -120,6 +124,10 @@ body h3 {
   font-weight: bold;
 }
 
+body main {
+  overflow: hidden;
+}
+
 .headline {
   font-size: 12rem;
   color: white;
@@ -137,9 +145,9 @@ body h3 {
 }
 
 .site-title {
-  width: 50rem;
-  margin: 20rem auto 7.5rem;
   position: relative;
+  width: 50rem;
+  margin: 0 auto 7.5rem;
 }
 
 .sub-shadow {
@@ -231,6 +239,7 @@ body h3 {
   -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
           clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .banner .banner-headline {
@@ -271,24 +280,28 @@ body h3 {
   left: 8rem;
   top: 26rem;
   margin: 0;
+  opacity: 0;
 }
 
 .banner .banner-button {
   position: absolute;
   top: 45rem;
   left: 44rem;
+  opacity: 0;
 }
 
 .banner .pizzabox {
   position: absolute;
   right: 20rem;
   top: 25rem;
+  opacity: 0;
 }
 
 .banner .pizzaknife {
   position: absolute;
   top: 31rem;
   right: 14rem;
+  opacity: 0;
 }
 
 .pizza-list {

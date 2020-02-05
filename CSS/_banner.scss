@@ -5,6 +5,7 @@
     height: 67rem;
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     position: relative; 
+    overflow: hidden;
 
     .banner-headline{
         color: $textColorDark;
@@ -42,24 +43,28 @@
         left: 8rem;
         top: 26rem;
         margin: 0;
+        opacity: 0;
     }
 
     .banner-button{
         position: absolute;
         top: 45rem;
         left: 44rem;
+        opacity: 0;
     }
 
     .pizzabox{
         position: absolute;
         right: 20rem;
         top: 25rem;
+        opacity: 0;
     }
 
     .pizzaknife{
         position: absolute;
         top: 31rem;
         right: 14rem;
+        opacity: 0;
     }
         
 }
