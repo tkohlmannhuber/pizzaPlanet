@@ -1,7 +1,21 @@
-header{
+
+
+
+
+
+nav{
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(34, 34, 34,0.8);
+    
+    }
+    
 
     ul{
         display: flex;

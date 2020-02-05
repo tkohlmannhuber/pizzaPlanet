@@ -3,9 +3,8 @@
 const hero = document.querySelector('.pizza-pos-main');
 const text = hero.querySelector('h1');
 const subText = hero.querySelector('.sub-shadow')
-const shadowWalk = 30; 
+const shadowWalk = 50; 
 
-console.log(text, subText);
 
 function shadow(e){
     const {offsetWidth: width, offsetHeight: height} = hero;
@@ -39,11 +38,10 @@ hero.addEventListener('mousemove', shadow)
     const circle2 = document.querySelector('.main-circle2');
     const pizzaCircle2 = document.querySelector('.main-pizza2')
 
-    console.log(circle, pizzaCircle)
 
     gsap.to(circle , {duration: 70, rotation: 360, repeat: -1 , ease: "none"});
-    gsap.to(pizzaCircle , {duration: 50, rotation: 360, repeat: -1 , ease: "none"});
-    gsap.to(circle2 , {duration: 70, rotation: -360, repeat: -1 , ease: "none"});
+    gsap.to(pizzaCircle , {duration: 50, rotation: -360, repeat: -1 , ease: "none"});
+    gsap.to(circle2 , {duration: 70, rotation: 360, repeat: -1 , ease: "none"});
     gsap.to(pizzaCircle2 , {duration: 50, rotation: -360, repeat: -1 , ease: "none"});
 
 
@@ -68,25 +66,49 @@ tl
 
 
   window.onload = function(){
-      const maintl = gsap.timeline({})
-
-      maintl.add('frame0')
-            .fromTo('.banner-list',{ x:-160, opacity:0 }, { duration: 1, x: 160, opacity:1},'frame0') 
-            .add('frame1', '+= 1')
-            .fromTo('.pizzamann',{x: 1000 , opacity: 0} , { duration: 3 , opacity:1, x: 37}, 'frame1')
-            .add('frame2', '+=.1')
-            .to('.banner-list', { duration:1, x:-180, opacity:0 }, 'frame2')
-            .to('.pizzamann', { duration: 2, x:-1400 ,  opacity:0 }, 'frame2')
-            .add('frame3', '+=.2')
-            .fromTo('.banner-text__order',{scale: 0, rotate:-15,  opacity:0}, {duration: .5, rotate:0, opacity:1, scale: 1},'frame3')
-            .add('frame4', '+=.5')
-            .fromTo('.pizzabox', {scale: 0, rotate:360,  opacity:0}, {duration: 1, rotate:0, opacity:1, scale: 1},'frame4')
-            .add('frame5', '+=.5')
-            .to('.pizzaknife', {duration: .5, opacity:1},'frame5')
-            .to('.pizzaknife', {duration: .2, x: -170})
-            .add('frame6', '+=0.1')
-            .fromTo('.banner-button',{scale:0, opacity: 0}, {duration: 2, scale:1, opacity:1, ease: Power1.easeInOut }, 'frame6')
 
 
+    const maintl = gsap.timeline({})
 
+    maintl.add('frame0')
+        .fromTo('.banner-list',{ x:-160, opacity:0 }, { duration: 1, x: 160, opacity:1},'frame0') 
+        .add('frame1', '+= 1')
+        .fromTo('.pizzamann',{x: 1000 , opacity: 0} , { duration: 3 , opacity:1, x: 37}, 'frame1')
+        .add('frame2', '+=.1')
+        .to('.banner-list', { duration:1, x:-180, opacity:0 }, 'frame2')
+        .to('.pizzamann', { duration: 2, x:-1400 ,  opacity:0 }, 'frame2')
+        .add('frame3', '+=.2')
+        .fromTo('.banner-text__order',{scale: 0, rotate:-15,  opacity:0}, {duration: .5, rotate:0, opacity:1, scale: 1},'frame3')
+        .add('frame4', '+=.5')
+        .fromTo('.pizzabox', {scale: 0, rotate:360,  opacity:0}, {duration: 1, rotate:0, opacity:1, scale: 1},'frame4')
+        .add('frame5', '+=.5')
+        .to('.pizzaknife', {duration: .5, opacity:1},'frame5')
+        .to('.pizzaknife', {duration: .2, x: -170})
+        .add('frame6', '+=.1')
+        .fromTo('.banner-text__free', {scale:0 , opacity: 0}, {scale: 1, opacity: 1}, 'frame6')
+
+}
+
+  /*########### STICKY NAV #######*/ 
+
+
+  // STICKY NAV
+
+window.onscroll = function() {sticky_nav()};
+
+// Navigation selektieren 
+var nav = document.querySelector("nav");
+
+// Das offset top der nav in sticky speichern
+var sticky = nav.offsetTop;
+
+
+function sticky_nav() {
+  if (window.pageYOffset >= sticky) {   // wenn die windowposition die offset position erreicht 
+    nav.classList.add("sticky");  //soll der nav die sticky klasse hinzugefügt werden 
+  } else {
+    nav.classList.remove("sticky"); // wenn die windowposition ganz oben ist soll die klasse entfernt werden 
   }
+
+
+}

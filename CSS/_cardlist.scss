@@ -1,8 +1,19 @@
+.pizza-list-headline{
+    color: $textColorLight;
+    text-align: center;
+    padding-top: 7.5rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: $underlineColor;
+    padding: 0;
+}
+
+
+
 .pizza-list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
     gap: 16rem;
-    margin-top: 16rem;
 
     .pizza-list__container{
         display: flex;
@@ -27,4 +38,5 @@
         font-size: $fontSizePrice;
         color: $textColorLight;
     }
+
 }

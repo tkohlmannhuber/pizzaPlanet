@@ -1,8 +1,8 @@
 footer{
     background: $secondaryColor;
-    height: 67rem;
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     margin-top: 10rem;
+    
 
     form{
         padding-top: 25rem;
@@ -12,5 +12,47 @@ footer{
     .form-pizza{
         width: 5rem;
     }
+
+    .social-flex{
+        display: flex;
+    }
+
+    .social-icon{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 5rem;
+        transition: 1s;
+    }
+    
+    .data-flex{
+        display: flex;
+
+        li a{
+            color: $textColorDark;
+            font-size: $fontSizeData;
+            font-family: 'BPreplay';
+            font-weight: normal;
+            margin-right: 1rem;
+        }
+
+    }
+
+    .footer-flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 20rem $wrapperPaddingPC 10rem;
+    }
+
+    .social-icon:hover{
+        transform: scale(1.3);
+     }
+
+     .data-content:hover{
+        transform: scale(1.3);
+
+     }
+
+
+
 
 }

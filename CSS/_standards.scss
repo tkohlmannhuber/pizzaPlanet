@@ -18,10 +18,14 @@
     
 }
 
-.button:hover{
+.brightButton:hover{
     background-color: white;
     box-shadow: 0px 0px 30px 10px rgb(255, 255, 255);
     color: #FDA016;
+}
+
+.scaleButton:hover{
+    transform: scale(1.3);
 }
 
 

@@ -11,10 +11,11 @@
 </head>
 <body>
     <header class="wrapper">
-        <a href="index.html">
-            <img class="logo" src="Bilder/Logo.svg" alt="Log">
-        </a>
         <nav>
+            <a href="index.html">
+                <img class="logo" src="Bilder/Logo.svg" alt="Log">
+            </a>
+            
             <ul class="nav-ul">
                 <li class="handwritten">
                     <a href="#">
@@ -36,6 +37,7 @@
                 </li>
             </ul>
         </nav>
+        
     </header>
     <main>
         <div class="pizza-pos-main">
@@ -44,7 +46,7 @@
                 <div class="headline sub-shadow">Pizza <span class="headline-span">Planet</span> </div>
             </div>
 
-            <button class="button hp-btn">
+            <button class="button brightButton hp-btn">
                 Order now
             </button>
 
@@ -67,7 +69,7 @@
                         - All day fresh
                     </li>
                     <li class="handwritten banner-list-item">
-                        - Hand Punched Pizza Dough
+                        - Stone Oven baked
                     </li>
                     <li class="handwritten banner-list-item">
                         - Hand Punched Pizza Dough
@@ -78,17 +80,16 @@
                 </ol>
 
                 <p class="banner-text__order">Order Online NOW!</p>
+                <p class="banner-text__free">Free delivery!!</p>
                 
                 <img class="pizzamann" src="bilder/Pizzaman.svg" alt="Mann mit Pizza in der Hand">
                 <img class="pizzabox" src="bilder/Pizzabox.svg" alt="Pizzakarton mit Pizza">
                 <img class="pizzaknife" src="bilder/Pizzaknife.svg" alt="Pizzaroller">
 
-                <button class="button banner-button">
-                    Order now
-                </button>
             </div>
         </section>
 
+        <!-- <h2 class="pizza-list-headline">Pizza Menu</h2> -->
         <ol class="pizza-list wrapper-pizza-list">
             <li class="pizza-list__container">
                 <img class="pizza-list-img" src="Bilder/Salame.svg" alt="Salami Pizza" width="200">
@@ -99,7 +100,7 @@
 
                 <p class="handwritten pizza-price">12$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -112,7 +113,7 @@
 
                 <p class="handwritten pizza-price">14$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -125,7 +126,7 @@
 
                 <p class="handwritten pizza-price">11$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -138,7 +139,7 @@
 
                 <p class="handwritten pizza-price">10$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>            <li class="pizza-list__container">
@@ -150,7 +151,7 @@
 
                 <p class="handwritten pizza-price">12$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -163,7 +164,7 @@
 
                 <p class="handwritten pizza-price">14$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -176,7 +177,7 @@
 
                 <p class="handwritten pizza-price">11$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -189,7 +190,7 @@
 
                 <p class="handwritten pizza-price">10$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>            
@@ -202,7 +203,7 @@
 
                 <p class="handwritten pizza-price">12$</p>
 
-                <button class="button">
+                <button class="button brightButton">
                     Add
                 </button>
             </li>
@@ -211,13 +212,46 @@
     <footer>
         <form class="form" action="#">
             <h2 class="form-text">You like <img class="form-pizza" src="Bilder/pizza-like.svg" alt="Wackelnde Pizza animation" width="27"> ?</h2>
-            <button class="button sign-in-btn">
+            <button class="button sign-in-btn scaleButton">
                 Sign in
             </button>
         </form>
+        <div class="footer-flex">
+            <ol class="social-flex">
+                <li>
+                    <a href="http://www.facebook.com">
+                        <svg class="social-icon" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.966 21.082"><path d="M7.391 21.082H4.015a1.024 1.024 0 0 1-1.023-1.022v-7.615H1.023A1.024 1.024 0 0 1 0 11.422V8.159a1.024 1.024 0 0 1 1.023-1.023h1.97V5.5a5.564 5.564 0 0 1 1.47-3.984A5.3 5.3 0 0 1 8.37 0h2.575a1.024 1.024 0 0 1 1.021 1.023v3.03a1.024 1.024 0 0 1-1.022 1.023H9.21c-.529 0-.663.106-.692.138-.047.054-.1.206-.1.627v1.295h2.4a1.039 1.039 0 0 1 .506.129 1.026 1.026 0 0 1 .526.894v3.263a1.024 1.024 0 0 1-1.023 1.022H8.414v7.616a1.024 1.024 0 0 1-1.023 1.022zm-3.163-1.236h2.95v-7.955a.684.684 0 0 1 .683-.683h2.748V8.372H7.861a.683.683 0 0 1-.683-.683V5.845A2.1 2.1 0 0 1 7.591 4.4a2.1 2.1 0 0 1 1.619-.556h1.52V1.24H8.369A3.9 3.9 0 0 0 4.228 5.5v2.189a.684.684 0 0 1-.683.683H1.236v2.836h2.31a.683.683 0 0 1 .683.683zM10.943 1.24zm0 0" /></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com">
+                        <svg class="social-icon" width="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.082 21.082"><g data-name="Gruppe 4"><g data-name="Gruppe 3"><path data-name="Pfad 4" d="M15.386 0H5.7A5.7 5.7 0 0 0 0 5.7v9.69a5.7 5.7 0 0 0 5.7 5.7h9.69a5.7 5.7 0 0 0 5.7-5.7V5.7A5.7 5.7 0 0 0 15.386 0zm3.993 15.386a4 4 0 0 1-3.993 3.993H5.7a4 4 0 0 1-4-3.993V5.7a4 4 0 0 1 4-4h9.69a4 4 0 0 1 3.989 4z" /></g></g><g data-name="Gruppe 6"><g data-name="Gruppe 5"><path data-name="Pfad 5" d="M15.259 9.806a4.727 4.727 0 1 0-4.686 5.422 4.791 4.791 0 0 0 .7-.052 4.728 4.728 0 0 0 3.983-5.37zm-4.233 3.685a3.024 3.024 0 1 1 2.548-3.435 3 3 0 0 1-2.547 3.435z" /></g></g><g data-name="Gruppe 8"><g data-name="Gruppe 7"><path data-name="Pfad 6" d="M16.473 4.609a.852.852 0 1 0 .249.6.858.858 0 0 0-.249-.6z" /></g></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com">
+                        <svg class="social-icon" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.005 21.284"><path d="M26 2.843c-1.636.075-1.6.069-1.785.085l.973-2.767S22.164 1.273 21.4 1.472A6.067 6.067 0 0 0 14.252.9a4.949 4.949 0 0 0-2.379 5.089 13.2 13.2 0 0 1-8.551-4.817L2.6.31l-.536.984a5.949 5.949 0 0 0-.634 4 5.754 5.754 0 0 0 .558 1.563l-.615-.238L1.3 7.653a5.487 5.487 0 0 0 .93 3.261 5.8 5.8 0 0 0 .725.894l-.318-.049.388 1.178a5.728 5.728 0 0 0 2.944 3.412c-1.369.583-2.478.951-4.301 1.551L0 18.452l1.541.842a16.172 16.172 0 0 0 4.714 1.716c4.559.715 9.692.133 13.148-2.98 2.911-2.621 3.866-6.35 3.667-10.231a2.425 2.425 0 0 1 .453-1.578A366.7 366.7 0 0 0 26 2.843zm-3.7 2.466a3.948 3.948 0 0 0-.755 2.569c.2 3.914-.865 6.95-3.166 9.022-2.679 2.42-7.017 3.37-11.888 2.606a11.8 11.8 0 0 1-2.548-.757 40.407 40.407 0 0 0 4.616-1.9l2.661-1.26-2.939-.189a4.155 4.155 0 0 1-3.3-1.88 5.27 5.27 0 0 0 1.119-.182l2.8-.781-2.826-.692a4.209 4.209 0 0 1-2.571-1.788 4.31 4.31 0 0 1-.557-1.229 7.054 7.054 0 0 0 1.154.183l2.616.259-2.077-1.617a4.362 4.362 0 0 1-1.653-4.6 15.159 15.159 0 0 0 10.682 4.6 9.022 9.022 0 0 0-.156-1.292 3.5 3.5 0 0 1 1.538-4.188 4.551 4.551 0 0 1 5.369.445 1.363 1.363 0 0 0 1.251.335 10.53 10.53 0 0 0 1.03-.313l-.657 1.876h.839zm0 0" /></svg>
+                    </a>
+                </li>
+            </ol>
+            <ol class="data-flex">
+                <li>
+                    <a class="data-content" href="#">Datenschutz</a>
+                </li>
+                <li>
+                    <a class="data-content" href="#">Impressum</a>
+                </li>
+                <li>
+                    <a class="data-content" href="#">AGB's</a>
+                </li>
+            </ol>
+        </div>
+
         
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="JS/main.js"></script>
 </html>
