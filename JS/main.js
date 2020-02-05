@@ -20,8 +20,8 @@ function shadow(e){
     const xWalk = Math.round((x / width * shadowWalk) - (shadowWalk / 2));       
     const yWalk = Math.round((y / height * shadowWalk) - (shadowWalk / 2));
 
-    text.style.textShadow = `${xWalk *2}px ${yWalk * 2}px 0 rgba(244, 166, 74, 0.7`;
-    subText.style.textShadow = `${xWalk }px ${yWalk }px 0 rgb(255, 158, 22)`;
+    text.style.textShadow = `${xWalk * 2}px ${yWalk * 2}px 0 rgba(244, 166, 74, 0.7`;
+    subText.style.textShadow = `${xWalk}px ${yWalk}px 0 rgb(255, 158, 22)`;
 
 
 
