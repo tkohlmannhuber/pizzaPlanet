@@ -1,21 +1,7 @@
-
-
-
-
-
 nav{
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(34, 34, 34,0.8);
-    
-    }
-    
 
     ul{
         display: flex;
@@ -25,16 +11,38 @@ nav{
         li a{
             font-size: 5rem;
             margin-right: 3.8rem;
+            position: relative;
+            transition: all 300ms;
+        }
+
+        li a:hover{
+            color: $navHoverColor;
+            
+            
         }
         li:last-child{
             margin-right: 0;
         }
 
-        li a:hover{
-            color: $navHoverColor;
+        li a::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -15px;
+            width: 100%;
+            height: 15px;
+            transform-origin: left;
+            transform: scaleX(0.2);
+
         }
 
+        li a:hover::after{
+            transform: scaleX(1);
+            transition: transform 300ms;
+            background-image: url(../Bilder/underline_long.svg);
 
+
+        }
 
 
 

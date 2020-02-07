@@ -39,13 +39,6 @@ nav {
   margin-top: 4rem;
 }
 
-nav .sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(34, 34, 34, 0.8);
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,14 +50,40 @@ nav ul {
 nav ul li a {
   font-size: 5rem;
   margin-right: 3.8rem;
+  position: relative;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+nav ul li a:hover {
+  color: #D54835;
 }
 
 nav ul li:last-child {
   margin-right: 0;
 }
 
-nav ul li a:hover {
-  color: #D54835;
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 15px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0.2);
+          transform: scaleX(0.2);
+}
+
+nav ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  background-image: url(../Bilder/underline_long.svg);
 }
 
 * {
@@ -247,12 +266,17 @@ body main {
   color: #3d3d3d;
   text-align: center;
   padding-top: 7.5rem;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
-  -webkit-text-decoration-color: #FDA016;
-          text-decoration-color: #FDA016;
+  position: relative;
+}
+
+.banner .banner-headline::after {
+  content: "";
+  position: absolute;
+  left: 61.4rem;
+  bottom: -12px;
+  background-image: url(../Bilder/underline_fresh.svg);
+  width: 45rem;
+  height: 21px;
 }
 
 .banner .banner-list {
@@ -305,6 +329,12 @@ body main {
   top: 31rem;
   right: 14rem;
   opacity: 0;
+}
+
+.banner .pizzamoped {
+  position: absolute;
+  top: 43rem;
+  right: 0;
 }
 
 .pizza-list-headline {
@@ -402,6 +432,30 @@ footer .data-flex li a {
   font-family: 'BPreplay';
   font-weight: normal;
   margin-right: 1rem;
+  position: relative;
+}
+
+footer .data-flex li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #FDA016;
+  width: 100%;
+  height: 0.3rem;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+footer .data-flex li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 footer .footer-flex {

@@ -33,7 +33,29 @@ footer{
             font-family: 'BPreplay';
             font-weight: normal;
             margin-right: 1rem;
+            position: relative;
         }
+
+        li a::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $underlineColor;
+            width: 100%;
+            height: 0.3rem;
+
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 300ms;
+
+        }
+
+        li a:hover::after{
+            transform: scaleX(1);
+        }
+
+
 
     }
 

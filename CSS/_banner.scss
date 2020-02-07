@@ -11,10 +11,17 @@
         color: $textColorDark;
         text-align: center;
         padding-top: 7.5rem;
-        text-decoration-line: underline;
-        text-decoration-style: wavy;
-        text-decoration-color: $underlineColor;
+        position: relative;
+    }
 
+    .banner-headline::after{
+        content: "";
+        position: absolute;
+        left: 61.4rem;
+        bottom: -12px;
+        background-image: url(../Bilder/underline_fresh.svg);
+        width: 45rem;
+        height: 21px;
     }
 
     .banner-list{
@@ -71,6 +78,13 @@
         top: 31rem;
         right: 14rem;
         opacity: 0;
+    }
+
+
+    .pizzamoped{
+        position: absolute;
+        top: 43rem;
+        right: 0;
     }
         
 }
